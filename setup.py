@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="thresholdmodeling", 
-    version="0.0.1",
+    version="0.0.2",
     author="Iago Pereira Lemos",
     author_email="lemosiago123@gmail.com",
     description="This package is intended for those who wish to conduct an extreme values analysis. It provides the whole toolkit necessary to create a threshold model in a simple and efficient way, presenting the main methods towards the Peak-Over-Threshold Method and the fit in the Generalized Pareto Distribution. For installing and use it, go to https://github.com/iagolemos1/thresholdmodeling",
