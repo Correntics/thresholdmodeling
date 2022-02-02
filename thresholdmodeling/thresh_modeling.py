@@ -282,7 +282,7 @@ def gpdcdf(sample, threshold, fit_method, alpha): #plot gpd cdf with empirical p
     plt.legend()
     plt.show()
 
-def return_value(sample_real, threshold, alpha, block_size, return_period, fit_method): #return value plot and return value estimative
+def return_value(sample_real, threshold, alpha, block_size, return_period, fit_method, unit_string='',period_string=''): #return value plot and return value estimative
     sample = np.sort(sample_real) 
     sample_excess = []
     sample_over_thresh = []
@@ -354,6 +354,7 @@ def return_value(sample_real, threshold, alpha, block_size, return_period, fit_m
     plt.legend()
 
     plt.show()
+    return x_m, year_array, z_N, N, sample_over_thresh
 
 def survival_function(sample, threshold, fit_method, alpha): #Plot the survival function, (1 - cdf)
     [shape, scale, sample, sample_excess, sample_over_thresh] = gpdfit(sample, threshold, fit_method)
