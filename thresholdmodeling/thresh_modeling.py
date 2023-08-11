@@ -292,7 +292,7 @@ def return_value(sample_real, threshold, alpha, block_size, return_period, fit_m
             sample_over_thresh.append(data)
 
     rdata = FloatVector(sample)
-    fit = POT.fitgpd(rdata, threshold, est = fit_method) #fit data 
+    fit = POT.fitgpd(rdata, float(threshold), est = fit_method) #fit data 
     shape = fit[0][1]  
     scale = fit[0][0]
     
